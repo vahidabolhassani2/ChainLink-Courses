@@ -6,6 +6,9 @@ contract SimpleStorage {
     address public favoriteAddress;
     string public favoriteString;
     bool public favoriteBool;
-    
-    
+
+    function store(uint256 _favoriteNumber) public {
+        favoriteNumber = _favoriteNumber;
+        favoriteNumber += 1;
+    }
 }
