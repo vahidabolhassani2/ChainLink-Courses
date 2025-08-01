@@ -26,6 +26,25 @@
 			{
 				"inputs": [
 					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "nameToFavoriteNumber",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
@@ -102,11 +121,11 @@
 	},
 	"sources": {
 		"Lesson-01/SimpleStorage.sol": {
-			"keccak256": "0x5680ce5d222d2ba62da9cee472657b667dee6135f442dde14080dda03253b76e",
+			"keccak256": "0xed1850532fedcf37b1b751971f9d3f6f9770b24481c596f6f2ea90cb012f997d",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://409f3039a66f3c795c0326f110e7d92ed66a8d257b435637313fc4b4fd068f7d",
-				"dweb:/ipfs/QmcSwJeN2cPUs29F7TYeVHsnEGkibFN7sQjjjBdiCGBEd1"
+				"bzz-raw://463eb78419b64c838e5c98ef92563a5c1301f0dc1cc95572d384138db696c1c7",
+				"dweb:/ipfs/QmY377V17kCN4ADC1J3TVXSV2sKWPSEpBCKvuKtZ1FoA4o"
 			]
 		}
 	},
