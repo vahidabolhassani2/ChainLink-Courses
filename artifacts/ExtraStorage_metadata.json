@@ -106,7 +106,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Lesson03-StorageFactory/SimpleStorage.sol": "SimpleStorage"
+			"Lesson03-StorageFactory/ExtraStorage.sol": "ExtraStorage"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -120,12 +120,20 @@
 		"remappings": []
 	},
 	"sources": {
-		"Lesson03-StorageFactory/SimpleStorage.sol": {
-			"keccak256": "0xf2b6ee6b2a4fc5edcbbc00a8a3120da09204f789423942e6616354f5d8c50f38",
+		"Lesson03-StorageFactory/ExtraStorage.sol": {
+			"keccak256": "0xfd43afdb8c46af2a0ecbb46a78b5f889008dfda9b75bde05fca00a343f50c32b",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://189baf8ae9e68423a851cf1e4cd206f54315e55452be5b13bacc986c8106d094",
-				"dweb:/ipfs/QmPesBwANsVzFkXtczZGc984ucyXARMXbSXmDTyDJiUAHx"
+				"bzz-raw://be002a5e8edbb8f38d8dd89494026431ba86a7739450d14f1f855f1f4564e550",
+				"dweb:/ipfs/QmebHqLEGWT6WareyVUSTjFcYn4DHwP39AuTTMueR6ytH2"
+			]
+		},
+		"Lesson03-StorageFactory/SimpleStorage.sol": {
+			"keccak256": "0x860f6bb1673507bfaa59853f5c94e170d939eb21fa15cab10765d08749f0eba9",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://cab57ad2897feaf5d4321d0b0e9b907f7d4fd5f1fb3f670c76594cf17d5ae9a2",
+				"dweb:/ipfs/QmeocVeXe5bjqUqA7q2r9innc7MkmkS8XyNzsqNCvWBJJ3"
 			]
 		}
 	},
