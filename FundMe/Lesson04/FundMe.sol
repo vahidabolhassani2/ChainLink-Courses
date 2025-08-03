@@ -37,17 +37,22 @@ contract FUndMe {
          * type of msg.sender: address
          * type of payable(msg.sender): payable address
          */
-        payable(msg.sender).transfer(address(this).balance); //automatically reverts if transfer fails
+
+        /*
+         *payable(msg.sender).transfer(address(this).balance); //automatically reverts if transfer fails
+         */
 
         /* another way:
          *bool sendSuccess = payable(msg.sender).send(address(this).balance);
          *require(sendSuccess,"transfer fails");
          */
 
-         /* another way
-         *( bool success, bytes dataReturned) = payable(msg.sender).call{value: address(this).balance}("");
-         *require(success, "transfer fails");
+        /* another way
          */
-    }
+        (
+            bool success, /* bytes memory dataReturned*/
+
+        ) = payable(msg.sender).call{value: address(this).balance}("");
+        require(success, "transfer fails");
     }
 }
