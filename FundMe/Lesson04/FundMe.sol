@@ -9,13 +9,18 @@ import {AggregatorV3Interface} from "@chainlink/contracts@1.4.0/src/v0.8/shared/
 contract FUndMe {
     // Address(ETH/USD): 0x694AA1769357215DE4FAC081bf1f309aDC325306
     uint256 public minimumUsd = 50 * 1e18;
-
+    address[] public funders;
+    mapping(address => uint256) public addressToAmountFunded;
 
     function fund() public payable {
         require(
-            getConversionRate(msg.value /*in wei*/) >= minimumUsd,
+            getConversionRate(
+                msg.value /*in wei*/
+            ) >= minimumUsd,
             "Didn't send enough"
         );
+        funders.push(msg.sender);
+        addressToAmountFunded[msg.sender] += msg.value;
     }
 
     function getPrice() public view returns (uint256) {
