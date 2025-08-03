@@ -10,6 +10,7 @@ contract FUndMe {
     // Address(ETH/USD): 0x694AA1769357215DE4FAC081bf1f309aDC325306
     uint256 public minimumUsd = 50 * 1e18;
 
+
     function fund() public payable {
         require(
             getConversionRate(msg.value /*in wei*/) >= minimumUsd,

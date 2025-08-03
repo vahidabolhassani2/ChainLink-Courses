@@ -107,11 +107,11 @@
 			]
 		},
 		"FundMe/Lesson04/FundMe.sol": {
-			"keccak256": "0x0d4abffe4c483a29b549dda5b397f5bd7ee24bd5f2c1ea8a334dd8a7f849144c",
+			"keccak256": "0x09f0e90ee1a09ada2d4d9c4f9e751e0aa879f2d74f762de77673695ea2db2d9b",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://115fa6773836c0bf0af30af0744a24972a155ab50c075b723e0933e39817eb92",
-				"dweb:/ipfs/QmWgPCzgXxAT8TEGS7MWt1d7r5aRLzETqghhas5ftf5fR3"
+				"bzz-raw://b7b2710bf8387d91e3c28f7f42eb6bd0bb7ad6b3066d3511e7a9da2b2cb184f4",
+				"dweb:/ipfs/QmQo7eD3ACCNKPuwRL1apqtRkKrV6CmiRHVT7Yc4m9Sbfh"
 			]
 		}
 	},
