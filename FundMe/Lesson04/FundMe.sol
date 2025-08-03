@@ -23,5 +23,31 @@ contract FUndMe {
         addressToAmountFunded[msg.sender] += msg.value;
     }
 
-    // function withdraw() {}
+    function withdraw() public {
+        for (
+            uint256 funderIndex = 0;
+            funderIndex < funders.length;
+            funderIndex++
+        ) {
+            address funder = funders[funderIndex];
+            addressToAmountFunded[funder] = 0;
+        }
+        funders = new address[](0);
+        /*
+         * type of msg.sender: address
+         * type of payable(msg.sender): payable address
+         */
+        payable(msg.sender).transfer(address(this).balance); //automatically reverts if transfer fails
+
+        /* another way:
+         *bool sendSuccess = payable(msg.sender).send(address(this).balance);
+         *require(sendSuccess,"transfer fails");
+         */
+
+         /* another way
+         *( bool success, bytes dataReturned) = payable(msg.sender).call{value: address(this).balance}("");
+         *require(success, "transfer fails");
+         */
+    }
+    }
 }
